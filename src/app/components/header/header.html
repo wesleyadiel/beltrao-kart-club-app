@@ -1,0 +1,89 @@
+<header
+  class="fixed w-full top-0 z-50 transition-all duration-300 border-b border-white/5"
+  [ngClass]="{
+    'bg-black/90 backdrop-blur-md py-2 shadow-lg': isScrolled && !isMenuOpen,
+    'bg-gradient-to-b from-black/80 to-transparent py-4': !isScrolled && !isMenuOpen,
+    'bg-transparent py-2': isMenuOpen
+  }"
+>
+  <div class="container mx-auto px-6">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <a routerLink="/" class="flex items-center gap-3 group relative z-50">
+        <img
+          src="/bkc-logo.avif"
+          alt="BKC Logo"
+          class="w-10 h-10 object-contain transform group-hover:rotate-3 transition duration-300"
+        />
+        <div class="flex flex-col">
+          <span class="text-xl font-display font-bold tracking-wider text-white">BELTRÃO</span>
+          <span
+            class="text-xs font-sans tracking-[0.2em] group-hover:text-white transition-colors drop-shadow-md text-white/80"
+            >KART CLUB</span
+          >
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a
+          *ngFor="let item of menuItems"
+          [routerLink]="item.path"
+          routerLinkActive="text-white font-bold after:w-full"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="text-sm font-sans text-white hover:text-white transition-colors uppercase tracking-widest relative group py-2 drop-shadow-md font-medium"
+        >
+          {{ item.label }}
+          <span
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-bkc-red transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button
+        (click)="toggleMenu()"
+        class="md:hidden text-white p-4 -mr-4 focus:outline-none relative z-50"
+      >
+        <div class="w-6 flex flex-col items-end gap-1.5 group">
+          <span
+            class="h-0.5 w-full bg-gray-900 transition-all duration-300 origin-center"
+            [ngClass]="{ 'rotate-45 translate-y-2 bg-white': isMenuOpen }"
+            [ngClass]="{ 'bg-white': isScrolled }"
+          ></span>
+          <span
+            class="h-0.5 w-4 bg-gray-900 transition-all duration-300 group-hover:w-full"
+            [ngClass]="{ 'opacity-0 bg-white': isMenuOpen }"
+            [ngClass]="{ 'bg-white': isScrolled }"
+          ></span>
+          <span
+            class="h-0.5 w-full bg-gray-900 transition-all duration-300 origin-center"
+            [ngClass]="{ '-rotate-45 -translate-y-2 bg-white': isMenuOpen }"
+            [ngClass]="{ 'bg-white': isScrolled }"
+          ></span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Overlay -->
+  <div
+    class="fixed inset-0 bg-black/95 backdrop-blur-xl z-40 transition-all duration-500 flex items-center justify-center md:hidden"
+    [class.opacity-0]="!isMenuOpen"
+    [class.pointer-events-none]="!isMenuOpen"
+  >
+    <nav class="flex flex-col items-center gap-8 p-6 w-full text-center">
+      <a
+        *ngFor="let item of menuItems; let i = index"
+        [routerLink]="item.path"
+        (click)="toggleMenu()"
+        class="text-4xl font-display font-bold text-white hover:text-bkc-red transition-colors tracking-wide opacity-0 translate-y-4 transition-all duration-500"
+        [class.opacity-100]="isMenuOpen"
+        [class.translate-y-0]="isMenuOpen"
+        [style.transitionDelay]="i * 100 + 'ms'"
+      >
+        {{ item.label }}
+      </a>
+    </nav>
+  </div>
+</header>

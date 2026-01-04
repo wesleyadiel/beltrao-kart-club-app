@@ -1,0 +1,65 @@
+<div class="bg-gray-50 min-h-screen pb-20">
+  <!-- Page Header -->
+  <div class="bg-gray-900 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Aprenda Kart</h1>
+      <p class="text-xl text-gray-400">Conteúdo educativo, dicas de pilotagem e segurança.</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 mt-12">
+    <!-- Introduction -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Formação de Novos Talentos</h2>
+      <p class="text-gray-600 text-lg">
+        O BKC atua como agente educador, compartilhando conhecimento técnico e boas práticas. Queremos que você comece do jeito certo: com segurança e técnica.
+      </p>
+    </div>
+
+    <!-- Educational Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <!-- Safety Card -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="h-64 bg-red-100 flex items-center justify-center">
+           <span class="text-9xl">🛡️</span>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Segurança na Pista</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start"><span class="text-red-600 mr-2">⚠</span> Uso obrigatório de capacete fechado.</li>
+            <li class="flex items-start"><span class="text-red-600 mr-2">⚠</span> Calçados fechados e roupas adequadas.</li>
+            <li class="flex items-start"><span class="text-red-600 mr-2">⚠</span> Respeito às bandeiras e sinalizações dos fiscais.</li>
+            <li class="flex items-start"><span class="text-red-600 mr-2">⚠</span> Fair play: evite contatos desnecessários.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Equipment Card -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="h-64 bg-blue-100 flex items-center justify-center">
+           <span class="text-9xl">🏎️</span>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Primeiros Passos</h3>
+          <p class="text-gray-600 mb-4">
+            Para começar, você não precisa comprar um kart. Nossa categoria <strong>Locado</strong> fornece todo o equipamento necessário para você sentir a emoção da pista.
+          </p>
+          <p class="text-gray-600">
+            Recomendamos começar com treinos livres em dias abertos para se familiarizar com a velocidade e a dinâmica do veículo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tips Section -->
+    <div class="bg-gray-900 rounded-2xl p-8 md:p-12 text-white">
+      <h2 class="text-3xl font-bold mb-8 text-center">Dicas de Pilotagem</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div *ngFor="let tip of tips" class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-red-600 transition duration-300">
+          <h4 class="text-xl font-bold text-red-500 mb-3">{{ tip.title }}</h4>
+          <p class="text-gray-300">{{ tip.content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
