@@ -18,6 +18,7 @@ export class HeaderComponent {
     { label: 'Campeonatos', path: '/campeonatos' },
     { label: 'Aprenda', path: '/aprenda' },
     { label: 'Galeria', path: '/galeria' },
+    { label: 'Seja Sócio', path: '/sociedade' },
     { label: 'Contato', path: '/contato' },
   ];
 
