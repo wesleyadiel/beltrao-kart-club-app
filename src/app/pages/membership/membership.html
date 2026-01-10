@@ -1,64 +1,88 @@
-<div class="bg-bkc-dark min-h-screen pt-32 pb-20">
-  <div class="container mx-auto px-6">
-    
+<div class="bg-bkc-dark min-h-screen pt-32 pb-20 relative overflow-hidden">
+  <!-- Background Elements -->
+  <div
+    class="absolute top-0 right-0 w-[500px] h-[500px] bg-bkc-red/10 rounded-full blur-[100px] pointer-events-none"
+  ></div>
+  <div
+    class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"
+  ></div>
+
+  <div class="container mx-auto px-6 relative z-10">
     <!-- Header Section -->
     <div class="text-center mb-16 animate-slide-up">
       <span class="text-bkc-red font-bold tracking-[0.3em] text-sm uppercase mb-4 block">
         Faça Parte
       </span>
-      <h1 class="text-4xl md:text-6xl font-display font-bold text-white mb-6">
-        PRÉ-ASSOCIAÇÃO
-      </h1>
+      <h1 class="text-4xl md:text-6xl font-display font-bold text-white mb-6">PRÉ-ASSOCIAÇÃO</h1>
       <p class="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">
-        Junte-se ao Beltrão Kart Club e tenha acesso exclusivo à pista, descontos em eventos e faça parte de uma comunidade apaixonada por velocidade.
+        Junte-se ao Beltrão Kart Club e tenha acesso exclusivo à pista, descontos em eventos e faça
+        parte de uma comunidade apaixonada por velocidade.
       </p>
     </div>
 
     <div class="grid lg:grid-cols-2 gap-16 items-start">
-      
       <!-- Benefícios Section -->
       <div class="space-y-12 animate-slide-up" style="animation-delay: 0.2s">
         <div>
-          <h2 class="text-3xl font-display font-bold text-white mb-8">
-            Por que ser sócio?
-          </h2>
-          
+          <h2 class="text-3xl font-display font-bold text-white mb-8">Por que ser sócio?</h2>
+
           <div class="space-y-8">
             <!-- Benefício 1 -->
             <div class="flex items-start gap-6 group">
-              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-bkc-red to-red-700 flex items-center justify-center shrink-0 shadow-lg shadow-red-900/30 group-hover:scale-110 transition-transform duration-300">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-br from-bkc-red to-red-700 flex items-center justify-center shrink-0 shadow-lg shadow-red-900/30 group-hover:scale-110 transition-transform duration-300"
+              >
                 <i class="pi pi-ticket text-white text-2xl"></i>
               </div>
               <div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-bkc-red transition-colors">Acesso Ilimitado</h3>
+                <h3
+                  class="text-xl font-bold text-white mb-2 group-hover:text-bkc-red transition-colors"
+                >
+                  Acesso Ilimitado
+                </h3>
                 <p class="text-gray-400 leading-relaxed">
-                  Treine quando quiser. Sócios têm livre acesso à pista durante todos os dias de funcionamento, sem taxas adicionais por diária.
+                  Treine quando quiser. Sócios têm livre acesso à pista durante todos os dias de
+                  funcionamento, sem taxas adicionais por diária.
                 </p>
               </div>
             </div>
 
             <!-- Benefício 2 -->
             <div class="flex items-start gap-6 group">
-              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shrink-0 shadow-lg shadow-blue-900/30 group-hover:scale-110 transition-transform duration-300">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shrink-0 shadow-lg shadow-blue-900/30 group-hover:scale-110 transition-transform duration-300"
+              >
                 <i class="pi pi-star text-white text-2xl"></i>
               </div>
               <div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-500 transition-colors">Eventos Exclusivos</h3>
+                <h3
+                  class="text-xl font-bold text-white mb-2 group-hover:text-blue-500 transition-colors"
+                >
+                  Eventos Exclusivos
+                </h3>
                 <p class="text-gray-400 leading-relaxed">
-                  Prioridade na inscrição de campeonatos, descontos especiais em taxas de inscrição e convites para eventos sociais do clube.
+                  Prioridade na inscrição de campeonatos, descontos especiais em taxas de inscrição
+                  e convites para eventos sociais do clube.
                 </p>
               </div>
             </div>
 
             <!-- Benefício 3 -->
             <div class="flex items-start gap-6 group">
-              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center shrink-0 shadow-lg shadow-gray-900/30 group-hover:scale-110 transition-transform duration-300">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center shrink-0 shadow-lg shadow-gray-900/30 group-hover:scale-110 transition-transform duration-300"
+              >
                 <i class="pi pi-users text-white text-2xl"></i>
               </div>
               <div>
-                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors">Comunidade & Voz</h3>
+                <h3
+                  class="text-xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors"
+                >
+                  Comunidade & Voz
+                </h3>
                 <p class="text-gray-400 leading-relaxed">
-                  Faça parte das decisões do clube, participe de assembleias e ajude a construir o futuro do automobilismo na região.
+                  Faça parte das decisões do clube, participe de assembleias e ajude a construir o
+                  futuro do automobilismo na região.
                 </p>
               </div>
             </div>
@@ -66,11 +90,17 @@
         </div>
 
         <!-- Callout Box -->
-        <div class="p-8 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 relative overflow-hidden">
-          <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-bkc-red/20 rounded-full blur-2xl"></div>
+        <div
+          class="p-8 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 relative overflow-hidden shadow-2xl"
+        >
+          <div
+            class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-bkc-red/20 rounded-full blur-2xl"
+          ></div>
           <h3 class="text-white font-bold text-lg mb-4">Como funciona?</h3>
           <p class="text-gray-400 text-sm mb-6">
-            O processo de associação passa pela aprovação da diretoria. Preencha a ficha ao lado e aguarde nosso contato para os próximos passos e informações sobre valores de joia e mensalidades.
+            O processo de associação passa pela aprovação da diretoria. Preencha a ficha ao lado e
+            aguarde nosso contato para os próximos passos e informações sobre valores de joia e
+            mensalidades.
           </p>
           <div class="flex items-center gap-3 text-bkc-red font-bold text-sm">
             <i class="pi pi-info-circle"></i>
@@ -80,214 +110,280 @@
       </div>
 
       <!-- Formulário Section -->
-      <div class="bg-[#1A1A1A] rounded-3xl p-8 md:p-10 border border-white/5 shadow-2xl animate-slide-up" style="animation-delay: 0.4s">
-        <h3 class="text-2xl font-display font-bold text-white mb-8 border-b border-white/10 pb-4">
+      <div
+        class="bg-white/5 backdrop-blur-md rounded-3xl p-8 md:p-10 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] animate-slide-up relative overflow-hidden"
+        style="animation-delay: 0.4s"
+      >
+        <!-- Glow effect behind form -->
+        <div
+          class="absolute top-0 right-0 w-[300px] h-[300px] bg-gradient-to-br from-white/5 to-transparent rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"
+        ></div>
+
+        <h3
+          class="text-2xl font-display font-bold text-white mb-8 border-b border-white/10 pb-4 relative z-10"
+        >
           Ficha de Pré-Associação
         </h3>
 
-        <form [formGroup]="membershipForm" (ngSubmit)="onSubmit()" class="space-y-6">
-          
+        <form [formGroup]="membershipForm" (ngSubmit)="onSubmit()" class="space-y-6 relative z-10">
           <!-- Nome Completo -->
-          <div>
-            <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+          <div class="group">
+            <label
+              class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+            >
               Nome Completo <span class="text-bkc-red">*</span>
             </label>
-            <input 
-              type="text" 
+            <input
+              type="text"
               formControlName="nome"
               placeholder="Nome Completo"
-              class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
-              [ngClass]="{'border-red-500': hasError('nome')}"
+              class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
+              [ngClass]="{ 'border-red-500': hasError('nome') }"
+            />
+            @if (hasError('nome')) {
+            <span class="text-red-500 text-xs mt-1 block"
+              >Nome é obrigatório (min 3 caracteres)</span
             >
-            <div *ngIf="hasError('nome')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+            }
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Data Nascimento -->
-            <div>
-              <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div class="group">
+              <label
+                class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+              >
                 Data Nascimento <span class="text-bkc-red">*</span>
               </label>
-              <input 
-                type="date" 
+              <input
+                type="date"
                 formControlName="nascimento"
-                class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
-                [ngClass]="{'border-red-500': hasError('nascimento')}"
-              >
-              <div *ngIf="hasError('nascimento')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+                class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
+                [ngClass]="{ 'border-red-500': hasError('nascimento') }"
+              />
+              @if (hasError('nascimento')) {
+              <span class="text-red-500 text-xs mt-1 block">Campo obrigatório</span>
+              }
             </div>
 
             <!-- Tipo Sanguíneo -->
-            <div>
-              <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div class="group">
+              <label
+                class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+              >
                 Tipo Sanguíneo <span class="text-bkc-red">*</span>
               </label>
-              <select 
-                formControlName="tipoSanguineo"
-                class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all appearance-none"
-                [ngClass]="{'border-red-500': hasError('tipoSanguineo')}"
-              >
-                <option value="" disabled selected>Selecione</option>
-                <option *ngFor="let tipo of tiposSanguineos" [value]="tipo">{{ tipo }}</option>
-              </select>
-              <div *ngIf="hasError('tipoSanguineo')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+              <div class="relative">
+                <select
+                  formControlName="tipoSanguineo"
+                  class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all appearance-none"
+                  [ngClass]="{ 'border-red-500': hasError('tipoSanguineo') }"
+                >
+                  <option value="" disabled selected>Selecione</option>
+                  <option *ngFor="let tipo of tiposSanguineos" [value]="tipo">{{ tipo }}</option>
+                </select>
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-400"
+                >
+                  <i class="pi pi-chevron-down"></i>
+                </div>
+              </div>
+              @if (hasError('tipoSanguineo')) {
+              <span class="text-red-500 text-xs mt-1 block">Campo obrigatório</span>
+              }
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- CPF -->
-            <div>
-              <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div class="group">
+              <label
+                class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+              >
                 CPF <span class="text-bkc-red">*</span>
               </label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 formControlName="cpf"
                 placeholder="000.000.000-00"
-                class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
-                [ngClass]="{'border-red-500': hasError('cpf')}"
-              >
-              <div *ngIf="hasError('cpf')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+                class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
+                [ngClass]="{ 'border-red-500': hasError('cpf') }"
+              />
+              @if (hasError('cpf')) {
+              <span class="text-red-500 text-xs mt-1 block">Campo obrigatório</span>
+              }
             </div>
 
             <!-- RG -->
-            <div>
-              <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div class="group">
+              <label
+                class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+              >
                 RG <span class="text-bkc-red">*</span>
               </label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 formControlName="rg"
                 placeholder="RG"
-                class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
-                [ngClass]="{'border-red-500': hasError('rg')}"
-              >
-              <div *ngIf="hasError('rg')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+                class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
+                [ngClass]="{ 'border-red-500': hasError('rg') }"
+              />
+              @if (hasError('rg')) {
+              <span class="text-red-500 text-xs mt-1 block">Campo obrigatório</span>
+              }
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Celular -->
-            <div>
-              <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div class="group">
+              <label
+                class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+              >
                 Celular <span class="text-bkc-red">*</span>
               </label>
-              <input 
-                type="tel" 
+              <input
+                type="tel"
                 formControlName="celular"
                 placeholder="(00) 00000-0000"
-                class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
-                [ngClass]="{'border-red-500': hasError('celular')}"
-              >
-              <div *ngIf="hasError('celular')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+                class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
+                [ngClass]="{ 'border-red-500': hasError('celular') }"
+              />
+              @if (hasError('celular')) {
+              <span class="text-red-500 text-xs mt-1 block">Campo obrigatório</span>
+              }
             </div>
 
             <!-- E-Mail -->
-            <div>
-              <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div class="group">
+              <label
+                class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+              >
                 E-Mail <span class="text-bkc-red">*</span>
               </label>
-              <input 
-                type="email" 
+              <input
+                type="email"
                 formControlName="email"
                 placeholder="seu@email.com"
-                class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
-                [ngClass]="{'border-red-500': hasError('email')}"
-              >
-              <div *ngIf="hasError('email')" class="text-red-500 text-xs mt-1">E-mail inválido</div>
+                class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
+                [ngClass]="{ 'border-red-500': hasError('email') }"
+              />
+              @if (hasError('email')) {
+              <span class="text-red-500 text-xs mt-1 block">E-mail inválido</span>
+              }
             </div>
           </div>
 
           <!-- Endereço -->
-          <div>
-            <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+          <div class="group">
+            <label
+              class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+            >
               Endereço <span class="text-bkc-red">*</span>
             </label>
-            <input 
-              type="text" 
+            <input
+              type="text"
               formControlName="endereco"
               placeholder="Rua, Número, Complemento"
-              class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
-              [ngClass]="{'border-red-500': hasError('endereco')}"
-            >
-            <div *ngIf="hasError('endereco')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+              class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
+              [ngClass]="{ 'border-red-500': hasError('endereco') }"
+            />
+            @if (hasError('endereco')) {
+            <span class="text-red-500 text-xs mt-1 block">Campo obrigatório</span>
+            }
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Bairro -->
-            <div>
-              <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div class="group">
+              <label
+                class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+              >
                 Bairro <span class="text-bkc-red">*</span>
               </label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 formControlName="bairro"
                 placeholder="Bairro"
-                class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
-                [ngClass]="{'border-red-500': hasError('bairro')}"
-              >
-              <div *ngIf="hasError('bairro')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+                class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
+                [ngClass]="{ 'border-red-500': hasError('bairro') }"
+              />
+              @if (hasError('bairro')) {
+              <span class="text-red-500 text-xs mt-1 block">Campo obrigatório</span>
+              }
             </div>
 
             <!-- CEP -->
-            <div>
-              <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div class="group">
+              <label
+                class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+              >
                 CEP <span class="text-bkc-red">*</span>
               </label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 formControlName="cep"
                 placeholder="00000-000"
-                class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
-                [ngClass]="{'border-red-500': hasError('cep')}"
-              >
-              <div *ngIf="hasError('cep')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+                class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
+                [ngClass]="{ 'border-red-500': hasError('cep') }"
+              />
+              @if (hasError('cep')) {
+              <span class="text-red-500 text-xs mt-1 block">Campo obrigatório</span>
+              }
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Cidade -->
-            <div>
-              <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div class="group">
+              <label
+                class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+              >
                 Cidade <span class="text-bkc-red">*</span>
               </label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 formControlName="cidade"
                 placeholder="Cidade"
-                class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
-                [ngClass]="{'border-red-500': hasError('cidade')}"
-              >
-              <div *ngIf="hasError('cidade')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+                class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600"
+                [ngClass]="{ 'border-red-500': hasError('cidade') }"
+              />
+              @if (hasError('cidade')) {
+              <span class="text-red-500 text-xs mt-1 block">Campo obrigatório</span>
+              }
             </div>
 
             <!-- Estado -->
-            <div>
-              <label class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <div class="group">
+              <label
+                class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 group-focus-within:text-bkc-red transition-colors"
+              >
                 Estado <span class="text-bkc-red">*</span>
               </label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 formControlName="estado"
                 placeholder="UF"
                 maxlength="2"
-                class="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600 uppercase"
-                [ngClass]="{'border-red-500': hasError('estado')}"
-              >
-              <div *ngIf="hasError('estado')" class="text-red-500 text-xs mt-1">Campo obrigatório</div>
+                class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bkc-red focus:ring-1 focus:ring-bkc-red transition-all placeholder-gray-600 uppercase"
+                [ngClass]="{ 'border-red-500': hasError('estado') }"
+              />
+              @if (hasError('estado')) {
+              <span class="text-red-500 text-xs mt-1 block">Campo obrigatório</span>
+              }
             </div>
           </div>
 
-          <button 
-            type="submit" 
-            class="w-full bg-bkc-red hover:bg-red-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-red-900/30 transition-all duration-300 transform hover:-translate-y-1 mt-6 disabled:opacity-50 disabled:cursor-not-allowed"
-            [disabled]="submitted && membershipForm.invalid"
+          <button
+            type="submit"
+            class="w-full bg-white text-black font-bold py-4 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300 transform mt-6 disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center gap-2"
+            [disabled]="(submitted && membershipForm.invalid) || submitting"
           >
-            ENVIAR FICHA
+            <i *ngIf="submitting" class="pi pi-spin pi-spinner"></i>
+            <span>{{ submitting ? 'ENVIANDO...' : 'ENVIAR FICHA' }}</span>
           </button>
         </form>
       </div>
-
     </div>
   </div>
 </div>

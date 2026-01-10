@@ -1,65 +1,65 @@
 <header
-  class="fixed w-full top-0 z-50 transition-all duration-300 border-b border-white/5"
+  class="fixed w-full top-0 z-50 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] bg-black"
   [ngClass]="{
-    'bg-black/90 backdrop-blur-md py-2 shadow-lg': isScrolled && !isMenuOpen,
-    'bg-gradient-to-b from-black/80 to-transparent py-4': !isScrolled && !isMenuOpen,
-    'bg-transparent py-2': isMenuOpen
+    'bg-gradient-to-b from-black/80 to-transparent': !isScrolled && !isMenuOpen,
+    ' bg-bkc-dark border-b border-white/5 shadow-2xl': isScrolled && !isMenuOpen,
+    'bg-transparent py-8': isMenuOpen
   }"
 >
-  <div class="container mx-auto px-6">
+  <div class="container mx-auto px-6 py-3">
     <div class="flex justify-between items-center">
-      <!-- Logo -->
-      <a routerLink="/" class="flex items-center gap-3 group relative z-50">
+      <!-- Logo Minimalista -->
+      <a routerLink="/" class="flex items-center gap-4 group relative z-50">
         <img
           src="/bkc-logo.avif"
           alt="BKC Logo"
-          class="w-10 h-10 object-contain transform group-hover:rotate-3 transition duration-300"
+          class="w-10 h-10 object-contain transition-transform duration-500 group-hover:scale-110"
         />
         <div class="flex flex-col">
-          <span class="text-xl font-display font-bold tracking-wider text-white">BELTRÃO</span>
+          <span class="text-lg font-display font-bold tracking-widest text-white leading-none"
+            >BELTRÃO</span
+          >
           <span
-            class="text-xs font-sans tracking-[0.2em] group-hover:text-white transition-colors drop-shadow-md text-white/80"
+            class="text-[10px] font-sans tracking-[0.3em] text-white/50 leading-none group-hover:text-white transition-colors duration-500"
             >KART CLUB</span
           >
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center gap-8">
+      <!-- Desktop Navigation Minimalista -->
+      <nav class="hidden md:flex items-center gap-2 relative">
         <a
           *ngFor="let item of menuItems"
           [routerLink]="item.path"
-          routerLinkActive="text-white font-bold after:w-full"
+          routerLinkActive="text-white bg-white/10 shadow-[0_0_20px_rgba(255,255,255,0.1)] border-white/10"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="text-sm font-sans text-white hover:text-white transition-colors uppercase tracking-widest relative group py-2 drop-shadow-md font-medium"
+          class="relative px-5 py-2 rounded-full text-xs font-sans font-medium text-white/60 transition-all duration-500 ease-out hover:text-white hover:bg-white/5 border border-transparent uppercase tracking-widest overflow-hidden group"
         >
-          {{ item.label }}
-          <span
-            class="absolute bottom-0 left-0 w-0 h-0.5 bg-bkc-red transition-all duration-300 group-hover:w-full"
-          ></span>
+          <span class="relative z-10">{{ item.label }}</span>
+          <!-- Hover Effect -->
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-[shimmer_1s_infinite]"
+          ></div>
         </a>
       </nav>
 
       <!-- Mobile Menu Button -->
       <button
         (click)="toggleMenu()"
-        class="md:hidden text-white p-4 -mr-4 focus:outline-none relative z-50"
+        class="md:hidden text-white p-2 focus:outline-none relative z-50 hover:bg-white/5 rounded-full transition-colors"
       >
-        <div class="w-6 flex flex-col items-end gap-1.5 group">
+        <div class="w-6 h-5 flex flex-col justify-between items-end overflow-hidden">
           <span
-            class="h-0.5 w-full bg-gray-900 transition-all duration-300 origin-center"
-            [ngClass]="{ 'rotate-45 translate-y-2 bg-white': isMenuOpen }"
-            [ngClass]="{ 'bg-white': isScrolled }"
+            class="h-[2px] w-full bg-white transition-all duration-300 origin-left"
+            [ngClass]="{ 'rotate-45 translate-x-1': isMenuOpen }"
           ></span>
           <span
-            class="h-0.5 w-4 bg-gray-900 transition-all duration-300 group-hover:w-full"
-            [ngClass]="{ 'opacity-0 bg-white': isMenuOpen }"
-            [ngClass]="{ 'bg-white': isScrolled }"
+            class="h-[2px] w-2/3 bg-white transition-all duration-300"
+            [ngClass]="{ 'opacity-0 translate-x-full': isMenuOpen }"
           ></span>
           <span
-            class="h-0.5 w-full bg-gray-900 transition-all duration-300 origin-center"
-            [ngClass]="{ '-rotate-45 -translate-y-2 bg-white': isMenuOpen }"
-            [ngClass]="{ 'bg-white': isScrolled }"
+            class="h-[2px] w-full bg-white transition-all duration-300 origin-left"
+            [ngClass]="{ '-rotate-45 translate-x-1': isMenuOpen }"
           ></span>
         </div>
       </button>
@@ -68,19 +68,23 @@
 
   <!-- Mobile Navigation Overlay -->
   <div
-    class="fixed inset-0 bg-black/95 backdrop-blur-xl z-40 transition-all duration-500 flex items-center justify-center md:hidden"
+    class="fixed inset-0 bg-black/95 backdrop-blur-3xl z-40 transition-all duration-700 flex items-center justify-center md:hidden"
     [class.opacity-0]="!isMenuOpen"
     [class.pointer-events-none]="!isMenuOpen"
+    [class.scale-110]="!isMenuOpen"
+    [class.scale-100]="isMenuOpen"
   >
     <nav class="flex flex-col items-center gap-8 p-6 w-full text-center">
       <a
         *ngFor="let item of menuItems; let i = index"
         [routerLink]="item.path"
         (click)="toggleMenu()"
-        class="text-4xl font-display font-bold text-white hover:text-bkc-red transition-colors tracking-wide opacity-0 translate-y-4 transition-all duration-500"
+        routerLinkActive="text-white scale-110 before:w-full"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="relative text-3xl font-display font-bold text-white/50 hover:text-white transition-all tracking-wider opacity-0 translate-y-8 duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[2px] before:bg-bkc-red before:transition-all before:duration-300 hover:before:w-full"
         [class.opacity-100]="isMenuOpen"
         [class.translate-y-0]="isMenuOpen"
-        [style.transitionDelay]="i * 100 + 'ms'"
+        [style.transitionDelay]="isMenuOpen ? i * 100 + 200 + 'ms' : '0ms'"
       >
         {{ item.label }}
       </a>

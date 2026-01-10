@@ -1,64 +1,70 @@
-<footer class="bg-gray-900 text-gray-300 py-12">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-      <!-- About -->
-      <div class="col-span-1 md:col-span-2">
-        <h3 class="text-white text-2xl font-racing mb-4 uppercase">Beltrão Kart Club</h3>
-        <p class="mb-4 text-gray-400">
-          Entidade dedicada ao desenvolvimento, organização e promoção do kartismo em Francisco
-          Beltrão e região. Referência no automobilismo esportivo local.
+<footer class="bg-black text-gray-400 py-20 border-t border-white/5 font-sans relative overflow-hidden">
+  <!-- Decorative Background Element -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-red-900/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+      
+      <!-- Brand & Social -->
+      <div class="md:col-span-4 space-y-6">
+        <a routerLink="/" class="inline-block group">
+           <div class="flex flex-col">
+            <span class="text-2xl font-display font-bold tracking-wider text-white leading-none">BELTRÃO</span>
+            <span class="text-[10px] font-sans tracking-[0.4em] text-white/40 leading-none group-hover:text-white transition-colors duration-500 mt-2 block">KART CLUB</span>
+          </div>
+        </a>
+        <p class="text-sm font-light leading-relaxed max-w-xs text-gray-500">
+          O epicentro do automobilismo no sudoeste. Onde a paixão pela velocidade encontra a técnica de pilotagem.
         </p>
-        <div class="flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-white transition"
-            ><i class="pi pi-instagram text-xl"></i
-          ></a>
-          <a href="#" class="text-gray-400 hover:text-white transition"
-            ><i class="pi pi-facebook text-xl"></i
-          ></a>
-          <a href="#" class="text-gray-400 hover:text-white transition"
-            ><i class="pi pi-youtube text-xl"></i
-          ></a>
+        <div class="flex gap-6 pt-2">
+          <a href="#" class="text-white/30 hover:text-white transition-colors duration-300 hover:scale-110 transform"><i class="pi pi-instagram text-xl"></i></a>
+          <a href="#" class="text-white/30 hover:text-white transition-colors duration-300 hover:scale-110 transform"><i class="pi pi-facebook text-xl"></i></a>
+          <a href="#" class="text-white/30 hover:text-white transition-colors duration-300 hover:scale-110 transform"><i class="pi pi-youtube text-xl"></i></a>
         </div>
       </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h4 class="text-white text-lg font-bold mb-4">Links Rápidos</h4>
-        <ul class="space-y-2">
-          <li><a routerLink="/" class="hover:text-red-500 transition">Home</a></li>
-          <li><a routerLink="/sobre" class="hover:text-red-500 transition">Sobre Nós</a></li>
-          <li>
-            <a routerLink="/campeonatos" class="hover:text-red-500 transition">Campeonatos</a>
-          </li>
-          <li><a routerLink="/aprenda" class="hover:text-red-500 transition">Aprenda Kart</a></li>
-          <li><a routerLink="/contato" class="hover:text-red-500 transition">Contato</a></li>
+      <!-- Navigation -->
+      <div class="md:col-span-2 md:col-start-6">
+        <h4 class="text-white font-bold text-[10px] uppercase tracking-[0.2em] mb-6 opacity-60">Menu</h4>
+        <ul class="space-y-4 text-sm font-light">
+          <li><a routerLink="/sobre" class="hover:text-white text-gray-400 transition-colors duration-300 block w-fit hover:translate-x-1 transform transition-transform">Sobre</a></li>
+          <li><a routerLink="/campeonatos" class="hover:text-white text-gray-400 transition-colors duration-300 block w-fit hover:translate-x-1 transform transition-transform">Campeonatos</a></li>
+          <li><a routerLink="/aprenda" class="hover:text-white text-gray-400 transition-colors duration-300 block w-fit hover:translate-x-1 transform transition-transform">Escola</a></li>
+          <li><a routerLink="/galeria" class="hover:text-white text-gray-400 transition-colors duration-300 block w-fit hover:translate-x-1 transform transition-transform">Galeria</a></li>
         </ul>
       </div>
 
-      <!-- Contact Info -->
-      <div>
-        <h4 class="text-white text-lg font-bold mb-4">Contato</h4>
-        <ul class="space-y-2 text-gray-400">
-          <li class="flex items-start">
-            <span class="mr-2 mt-1">📍</span>
-            <span
-              >PR-566 - Secção Jacaré<br />
-              Francisco Beltrão - PR, 85609-450</span
-            >
-          </li>
-          <li class="flex items-center">
-            <span class="mr-2">📧</span>
-            <a href="mailto:contato@bkc.com.br" class="hover:text-white">contato@bkc.com.br</a>
-          </li>
+      <!-- Legal / More -->
+      <div class="md:col-span-2">
+        <h4 class="text-white font-bold text-[10px] uppercase tracking-[0.2em] mb-6 opacity-60">Clube</h4>
+        <ul class="space-y-4 text-sm font-light">
+          <li><a routerLink="/sociedade" class="hover:text-white text-gray-400 transition-colors duration-300 block w-fit hover:translate-x-1 transform transition-transform">Seja Sócio</a></li>
+          <li><a routerLink="/contato" class="hover:text-white text-gray-400 transition-colors duration-300 block w-fit hover:translate-x-1 transform transition-transform">Fale Conosco</a></li>
+          <li><a href="#" class="hover:text-white text-gray-400 transition-colors duration-300 block w-fit hover:translate-x-1 transform transition-transform">Estatuto</a></li>
+          <li><a href="#" class="hover:text-white text-gray-400 transition-colors duration-300 block w-fit hover:translate-x-1 transform transition-transform">Privacidade</a></li>
         </ul>
+      </div>
+
+      <!-- Contact / Location -->
+      <div class="md:col-span-3 md:col-start-10">
+         <h4 class="text-white font-bold text-[10px] uppercase tracking-[0.2em] mb-6 opacity-60">Localização</h4>
+         <address class="not-italic text-sm font-light text-gray-500 space-y-2 mb-6">
+           <p class="text-white/80">PR-566 - Secção Jacaré</p>
+           <p>Francisco Beltrão - PR</p>
+           <p>85609-450</p>
+         </address>
+         <div>
+           <a href="mailto:contato@bkc.com.br" class="text-sm text-white/40 hover:text-white transition-colors duration-300 border-b border-white/5 hover:border-white/40 pb-0.5">contato@bkc.com.br</a>
+         </div>
       </div>
     </div>
 
-    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
-      <p>
-        &copy; 2024 Beltrão Kart Club (BKC) & Associação Beltronense de Kart (ABK). Todos os
-        direitos reservados.
-      </p>
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-light text-gray-600 uppercase tracking-wider">
+      <p>&copy; 2024 Beltrão Kart Club.</p>
+      <div class="flex gap-6">
+        <p>Todos os direitos reservados.</p>
+      </div>
     </div>
   </div>
 </footer>

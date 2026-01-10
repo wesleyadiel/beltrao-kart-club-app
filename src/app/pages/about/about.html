@@ -1,55 +1,68 @@
-<div class="bg-gray-50 min-h-screen pb-20">
+<div class="bg-bkc-dark min-h-screen pt-32 pb-20 relative overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-bkc-red/20 to-transparent pointer-events-none"></div>
+  <div class="absolute top-20 right-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
   <!-- Page Header -->
-  <div class="bg-gray-900 text-white py-20">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Sobre o Clube</h1>
-      <p class="text-xl text-gray-400">Nossa história, missão e paixão pelo kartismo.</p>
-    </div>
+  <div class="container mx-auto px-6 text-center mb-16 relative z-10">
+    <span class="text-bkc-red font-bold tracking-[0.3em] text-sm uppercase mb-4 block animate-slide-up">
+      Nossa Essência
+    </span>
+    <h1 class="text-4xl md:text-6xl font-display font-bold text-white mb-6 animate-slide-up" style="animation-delay: 0.1s">
+      SOBRE O CLUBE
+    </h1>
+    <p class="text-xl text-gray-400 font-light max-w-2xl mx-auto animate-slide-up" style="animation-delay: 0.2s">
+      Nossa história, missão e paixão pelo kartismo em Francisco Beltrão.
+    </p>
   </div>
 
-  <div class="container mx-auto px-4 -mt-10">
+  <div class="container mx-auto px-6 relative z-10">
     <!-- Intro Card -->
-    <div class="bg-white rounded-lg shadow-xl p-8 md:p-12 mb-12">
+    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-12 mb-20 shadow-2xl animate-slide-up" style="animation-delay: 0.3s">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">Beltrão Kart Club (BKC)</h2>
-          <p class="text-gray-600 mb-4 leading-relaxed">
+          <h2 class="text-3xl font-display font-bold text-white mb-6">
+            Beltrão <span class="text-bkc-red">Kart Club</span>
+          </h2>
+          <p class="text-gray-300 mb-6 leading-relaxed font-light text-lg">
             O <strong>Beltrão Kart Club (BKC)</strong> é uma entidade dedicada ao desenvolvimento,
             organização e promoção do kartismo em Francisco Beltrão e região. Atuando de forma
             contínua junto à comunidade local, o clube se consolidou como referência regional no
             automobilismo esportivo.
           </p>
-          <p class="text-gray-600 mb-4 leading-relaxed">
+          <p class="text-gray-300 mb-6 leading-relaxed font-light text-lg">
             Trabalhamos de forma integrada com a
             <strong>Associação Beltronense de Kart (ABK)</strong>, entidade que há anos contribui
             para o fortalecimento do kartismo local, ampliando o alcance esportivo, social e
             educacional da modalidade.
           </p>
         </div>
-        <div class="rounded-lg overflow-hidden shadow-md">
-          <img src="/bkc-family.avif" alt="Equipe BKC" class="w-full h-full object-cover" />
+        <div class="relative group rounded-2xl overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
+          <img src="/bkc-family.avif" alt="Equipe BKC" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
         </div>
       </div>
     </div>
 
     <!-- History -->
-    <div class="mb-16">
-      <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Nossa História</h2>
+    <div class="mb-20">
+      <h2 class="text-3xl font-display font-bold text-white mb-12 text-center">Nossa Trajetória</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-red-600">
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Origens (2006)</h3>
-          <p class="text-gray-600">
+        <div class="bg-[#1A1A1A] p-8 rounded-3xl border border-white/5 hover:border-bkc-red/50 transition-colors duration-300 group">
+          <div class="text-bkc-red text-5xl font-display font-bold mb-4 opacity-50 group-hover:opacity-100 transition-opacity">2006</div>
+          <h3 class="text-xl font-bold text-white mb-3">As Origens</h3>
+          <p class="text-gray-400 font-light leading-relaxed">
             A ABK, fundada em 2006, foi responsável por estruturar as primeiras iniciativas formais
             da modalidade no município. O kartismo em Francisco Beltrão possui uma trajetória
-            marcada pelo envolvimento da comunidade, pilotos amadores e profissionais.
+            marcada pelo envolvimento da comunidade.
           </p>
         </div>
-        <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-red-600">
-          <h3 class="text-xl font-bold text-gray-800 mb-3">O Novo Clube (2020)</h3>
-          <p class="text-gray-600">
+        <div class="bg-[#1A1A1A] p-8 rounded-3xl border border-white/5 hover:border-blue-600/50 transition-colors duration-300 group">
+          <div class="text-blue-600 text-5xl font-display font-bold mb-4 opacity-50 group-hover:opacity-100 transition-opacity">2020</div>
+          <h3 class="text-xl font-bold text-white mb-3">O Novo Clube</h3>
+          <p class="text-gray-400 font-light leading-relaxed">
             Com o crescimento do esporte, surgiu o Beltrão Kart Club (BKC), formalizado em 2020, com
             foco direto na organização de campeonatos, gestão esportiva e comunicação institucional.
-            Hoje, as duas entidades atuam de forma complementar.
           </p>
         </div>
       </div>
@@ -58,54 +71,37 @@
     <!-- Mission Vision Values -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Mission -->
-      <div
-        class="bg-white p-8 rounded-lg shadow-lg text-center hover:transform hover:-translate-y-1 transition duration-300"
-      >
-        <div
-          class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
-        >
+      <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-3xl border border-white/10 text-center hover:transform hover:-translate-y-2 transition duration-300 backdrop-blur-sm">
+        <div class="w-16 h-16 bg-bkc-red/20 text-bkc-red rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-[0_0_20px_rgba(230,0,0,0.3)]">
           🎯
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-4">Missão</h3>
-        <p class="text-gray-600">
-          Promover o kartismo como esporte, lazer e formação esportiva, criando um ambiente seguro,
-          competitivo e acessível para pilotos de todas as idades e níveis.
+        <h3 class="text-xl font-bold text-white mb-4">Missão</h3>
+        <p class="text-gray-400 font-light">
+          Promover o kartismo como esporte, lazer e formação esportiva, criando um ambiente seguro
+          e competitivo.
         </p>
       </div>
 
       <!-- Vision -->
-      <div
-        class="bg-white p-8 rounded-lg shadow-lg text-center hover:transform hover:-translate-y-1 transition duration-300"
-      >
-        <div
-          class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
-        >
+      <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-3xl border border-white/10 text-center hover:transform hover:-translate-y-2 transition duration-300 backdrop-blur-sm">
+        <div class="w-16 h-16 bg-blue-600/20 text-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-[0_0_20px_rgba(37,99,235,0.3)]">
           👁️
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-4">Visão</h3>
-        <p class="text-gray-600">
-          Ser reconhecido como um dos principais polos regionais de kartismo do Sul do Brasil,
-          formando pilotos e realizando eventos de alto nível técnico.
+        <h3 class="text-xl font-bold text-white mb-4">Visão</h3>
+        <p class="text-gray-400 font-light">
+          Ser reconhecido como um dos principais polos regionais de kartismo do Sul do Brasil.
         </p>
       </div>
 
       <!-- Values -->
-      <div
-        class="bg-white p-8 rounded-lg shadow-lg text-center hover:transform hover:-translate-y-1 transition duration-300"
-      >
-        <div
-          class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
-        >
+      <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-3xl border border-white/10 text-center hover:transform hover:-translate-y-2 transition duration-300 backdrop-blur-sm">
+        <div class="w-16 h-16 bg-green-500/20 text-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-[0_0_20px_rgba(34,197,94,0.3)]">
           🤝
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-4">Valores</h3>
-        <ul class="text-gray-600 text-left space-y-2 inline-block">
-          <li>✅ Paixão pelo automobilismo</li>
-          <li>✅ Espírito esportivo e fair play</li>
-          <li>✅ Segurança dentro e fora da pista</li>
-          <li>✅ Inclusão de novos talentos</li>
-          <li>✅ Fortalecimento da comunidade</li>
-        </ul>
+        <h3 class="text-xl font-bold text-white mb-4">Valores</h3>
+        <p class="text-gray-400 font-light">
+          Segurança, ética esportiva, transparência e integração comunitária.
+        </p>
       </div>
     </div>
   </div>
